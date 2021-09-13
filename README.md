@@ -1,4 +1,4 @@
-# googleclone
+# Welcome to googleclone
 
 ## Project setup
 ```
