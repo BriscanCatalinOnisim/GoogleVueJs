@@ -1,17 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Google.com"/>
+  <v-app>
+    <div id="app">
+      <div class="nav">
+        <Appbar/>
+      </div>
+      <router-view />
+      <div>
+        <Footer/>
+      </div>
+    </div>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Appbar from './components/navbar.vue';
+import Footer from './components/footer.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    Appbar,
+    Footer,
+  },
+};
 </script>
 
 <style>
@@ -22,5 +33,25 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.nav {
+  margin-top: 10px;
+}
+
+html {
+  min-width: 400px;
+}
+
+a:visited {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+a {
+  color: rgba(118, 122, 122, 0.87);
+}
+
+a:hover {
+  text-decoration: underline;
 }
 </style>
