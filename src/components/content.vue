@@ -5,7 +5,6 @@
       <div class="search">
         <img src="../assets/search.svg" class="icon-search"/>
         <input type="search" class="search-input" />
-        <img src="../assets/keyboard.png" class="icon-keyboard" />
         <img src="../assets/mic.svg" class="icon-mic"/>
       </div>
 
@@ -32,9 +31,9 @@
 
 .languages {
   display: flex;
+  justify-content: center;
   align-items: center;
-  font-size: 13px;
-  margin-top: 15px;
+  color: #3c4043;
 }
 .language-type {
   padding: 5px;
@@ -43,11 +42,6 @@
 .lang {
   color: #1a0dab;
 }
-
-.lang:hover {
-  text-decoration: underline;
-}
-
 
 .buttons {
   background-color: #f8f9fa;
@@ -81,14 +75,17 @@
 }
 
 .search {
-  display: flex;
-  align-items: center;
-  width: 95%;
-  height: 4.4rem;
-  border: 1px solid #dfe1e5;
-  border-radius: 2.4rem;
-  margin-top: 25px;
-  margin-bottom: 15px;
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;
+    width: 482px;
+    width: auto;
+    max-width: 584px;
 }
 
 .search:hover {
@@ -104,6 +101,18 @@
   font-size: 1.6rem;
   padding: 0 1.3rem;
 }
+
+.icon-search {
+  width: 2rem;
+  margin-left: 14px;
+}
+
+.icon-mic {
+  margin-right: 14px;
+  height: 90%;
+  cursor: pointer;
+}
+
 
 /* Remove the headerRight for smaller screens */
 @media all and (max-width: 1024px) {

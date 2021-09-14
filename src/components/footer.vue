@@ -21,7 +21,7 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 15px 30px;
+  padding: 5px 30px;
   background-color: #f2f2f2;
   color: rgba(0, 0, 0, 0.54);
 }
