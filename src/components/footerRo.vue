@@ -1,5 +1,7 @@
 <template>
-  <div class="footerRo">România</div>
+  <div class="footerRo">
+    <a href="#" class="textLink">Romania </a>
+  </div>
 </template>
 
 <style>

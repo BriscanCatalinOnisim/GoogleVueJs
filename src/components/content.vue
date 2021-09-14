@@ -1,76 +1,110 @@
 <template>
-  <form>
-    <span v-if="showButtons">
-      <div class="__search">
-        <v-text-field
-          v-model="searchTerm"
-          append-icon="mdi-microphone"
-          prepend-inner-icon="mdi-magnify"
-          rounded
-          solo
-        >
-        </v-text-field>
+    <main class="main">
+      <img src="../assets/google.png" class="logo" />
+
+      <div class="search">
+        <img src="../assets/search.svg" class="icon-search"/>
+        <input type="search" class="search-input" />
+        <img src="../assets/keyboard.png" class="icon-keyboard" />
+        <img src="../assets/mic.svg" class="icon-mic"/>
       </div>
-      <div class="__action_buttons">
-        <v-btn type="submit" @click="search" class="button" depressed>
-          Google Search
-        </v-btn>
-        <v-btn class="button" depressed> I'm Feeling Lucky </v-btn>
-        <div class="mt-8 __lang">
-          Google offered in: <router-link to="/">Français</router-link>
+
+      <div class="main-buttons">
+        <button class="buttons">Google Search</button>
+        <button class="buttons">I'm Feeling Lucky</button>
+      </div>
+
+      <div class="languages">
+        <p>Google offeres in:</p>
+
+        <div class="language-type">
+           <a class="lang" href="">Romana</a>
+           <a class="lang" href="">magyar</a>
+           <a class="lang" href="">Deutsch</a>
         </div>
       </div>
-    </span>
-    <span v-else>
-      <div class="__search withOutButtons">
-        <v-text-field
-          v-model="searchTerm"
-          append-icon="mdi-microphone"
-          prepend-inner-icon="mdi-magnify"
-          rounded
-          solo
-        >
-          <template>
-            <v-icon>mdi-close</v-icon>
-            <v-divider vertical class="mr-2 ml-2"></v-divider>
-            <v-icon class="mr-3">mdi-microphone</v-icon>
-            <v-icon type="submit" @click="search">mdi-magnify</v-icon>
-          </template>
-        </v-text-field>
-      </div>
-    </span>
-  </form>
+    </main>
 </template>
 
 
 
 <style scoped>
-.__action_buttons .button {
-  margin: 5px;
-  padding: 7px 15px;
-  background-color: #f8f8f8;
-  border: 1px solid white;
-  text-transform: initial;
-  color: #5f6368;
+
+.languages {
+  display: flex;
+  align-items: center;
   font-size: 13px;
+  margin-top: 15px;
 }
-.__action_buttons .button:hover {
-  box-shadow: 0 1px 1px rgba(238, 238, 238, 0.1);
-  background-image: -webkit-repeating-linear-gradient(top, #f8f8f8, #f1f1f1);
-  background-color: #ffffff;
-  border: 1px solid #c6c6c6;
-  color: #222;
+.language-type {
+  padding: 5px;
 }
-.__lang {
-  font-size: 13px;
+
+.lang {
+  color: #1a0dab;
 }
-/* disabling the a href on button search */
-a:hover {
-  text-decoration: none;
+
+.lang:hover {
+  text-decoration: underline;
 }
-.__search {
-  max-width: 100%;
+
+
+.buttons {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
 }
+
+.buttons:hover {
+  border-radius: 4px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  height: 4.4rem;
+  border: 1px solid #dfe1e5;
+  border-radius: 2.4rem;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.search:hover {
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(233, 225, 229, 0);
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.6rem;
+  padding: 0 1.3rem;
+}
+
 /* Remove the headerRight for smaller screens */
 @media all and (max-width: 1024px) {
   .__search.withOutButtons {

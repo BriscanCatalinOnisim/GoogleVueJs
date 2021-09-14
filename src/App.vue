@@ -1,11 +1,12 @@
 <template>
   <v-app>
     <div id="app">
-      <div class="nav"><Navbar/> </div>
-      
-      <router-view />
-      <div><FooterRo/></div>
-      <div><Footer/></div>
+      <Navbar/> 
+      <Spacer/>
+      <Content/>
+      <Spacer/>
+      <FooterRo/>
+      <Footer/>
     </div>
   </v-app>
 </template>
@@ -14,6 +15,8 @@
 import Navbar from './components/navbar.vue';
 import Footer from './components/footer.vue';
 import FooterRo from './components/footerRo.vue';
+import Content from './components/content.vue';
+import Spacer from './components/spaces.vue'
 
 export default {
   name: 'App',
@@ -21,6 +24,8 @@ export default {
     Navbar,
     Footer,
     FooterRo,
+    Content,
+    Spacer,
   },
 };
 </script>
@@ -43,6 +48,15 @@ html {
   min-width: 400px;
 }
 
+router-link:hover {
+  text-decoration: underline;
+}
+
+a {
+  margin: 10px 10px;
+  align-self: center;
+}
+
 a:visited {
   color: rgba(0, 0, 0, 0.87);
 }
@@ -54,4 +68,11 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.textLink {
+  text-decoration: none;
+  color: black;
+  color: rgba(0, 0, 0, 0.54);
+}
+
 </style>

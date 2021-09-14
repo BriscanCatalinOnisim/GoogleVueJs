@@ -1,8 +1,8 @@
 <template>
   <div class="__footer">
     <div class="links">
-      <a href="#" class="textLink">Advertising</a>
-      <a href="#" class="textLink">Business</a>
+      <a href="#" class="textLink">Advertising </a>
+      <a href="#" class="textLink">Business </a>
       <a href="#" class="textLink">About</a>
       <a href="#" class="textLink">How Search works</a>
     </div>
@@ -23,12 +23,6 @@
   justify-content: space-between;
   padding: 15px 30px;
   background-color: #f2f2f2;
-  color: rgba(0, 0, 0, 0.54);
-}
-
-.textLink {
-  text-decoration: none;
-  color: black;
   color: rgba(0, 0, 0, 0.54);
 }
 
