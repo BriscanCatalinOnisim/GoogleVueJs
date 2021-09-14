@@ -52,6 +52,16 @@ router-link:hover {
   text-decoration: underline;
 }
 
+
+a1 {
+  margin: 10px 10px;
+  align-self: center;
+}
+
+a1:hover {
+  text-decoration: underline;
+}
+
 a {
   margin: 10px 10px;
   align-self: center;

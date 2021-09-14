@@ -1,7 +1,8 @@
 <template>
     <main class="main">
-      <img src="../assets/google.png" class="logo" />
-
+      <div class="logo">
+        <img src="../assets/google.png" class="logo" />
+      </div>
       <div class="search">
         <img src="../assets/search.svg" class="icon-search"/>
         <input type="search" class="search-input" />
@@ -14,12 +15,12 @@
       </div>
 
       <div class="languages">
-        <p>Google offeres in:</p>
+        <p>Google offered in:</p>
 
         <div class="language-type">
-           <a class="lang" href="">Romana</a>
-           <a class="lang" href="">magyar</a>
-           <a class="lang" href="">Deutsch</a>
+           <a1 class="lang" href="">Romana</a1>
+           <a1 class="lang" href="">magyar</a1>
+           <a1 class="lang" href="">Deutsch</a1>
         </div>
       </div>
     </main>
@@ -28,6 +29,14 @@
 
 
 <style scoped>
+
+.main {
+  display: flex;
+  padding-top: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .languages {
   display: flex;
@@ -108,15 +117,16 @@
 }
 
 .icon-mic {
+  padding-top: 5px;
   margin-right: 14px;
-  height: 90%;
+  height: 70%;
   cursor: pointer;
 }
 
 
 /* Remove the headerRight for smaller screens */
 @media all and (max-width: 1024px) {
-  .__search.withOutButtons {
+  .search.withOutButtons {
     max-width: 65%;
   }
 }

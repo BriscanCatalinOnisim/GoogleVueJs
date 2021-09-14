@@ -17,6 +17,7 @@
   </div>
 </template>
 <style scoped>
+
 .headerRight {
   display: flex;
   font-size: 13px;
@@ -34,12 +35,6 @@
 .menu-item1 {
   padding-top: 7px;
   padding: 5px;
-}
-
-.menu-item1:hover {
-  box-shadow: 1px 5px 10px #949494;
-  background-color: rgba(60, 64, 67, 0.08);
-  border-radius: 50%;
 }
 
 .menu-item._menu {
@@ -78,14 +73,7 @@ a:hover {
   width: 30px;
 }
 
-.image {
-  padding: 5px;
-  width: 20px;;
-  padding-bottom: 1px;
-  border: transparent;
-}
-
-.image:hover {
+.myphoto:hover {
   box-shadow: 1px 5px 10px #949494;
   background-color: rgba(60, 64, 67, 0.08);
   border-radius: 50%;

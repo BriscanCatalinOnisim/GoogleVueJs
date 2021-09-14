@@ -21,7 +21,7 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 5px 30px;
+  padding: 1px 10px;
   background-color: #f2f2f2;
   color: rgba(0, 0, 0, 0.54);
 }
@@ -36,5 +36,14 @@
   align-items: flex-start;
 }
 
+@media only screen and (max-width:650px) {
+   .__footer {
+        display: block;
+        height:50px;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+}
 
 </style>
