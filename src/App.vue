@@ -1,26 +1,26 @@
 <template>
   <v-app>
     <div id="app">
-      <div class="nav">
-        <Appbar/>
-      </div>
+      <div class="nav"><Navbar/> </div>
+      
       <router-view />
-      <div>
-        <Footer/>
-      </div>
+      <div><FooterRo/></div>
+      <div><Footer/></div>
     </div>
   </v-app>
 </template>
 
 <script>
-import Appbar from './components/navbar.vue';
+import Navbar from './components/navbar.vue';
 import Footer from './components/footer.vue';
+import FooterRo from './components/footerRo.vue';
 
 export default {
   name: 'App',
   components: {
-    Appbar,
+    Navbar,
     Footer,
+    FooterRo,
   },
 };
 </script>
