@@ -81,8 +81,14 @@ a:hover {
 
 .textLink {
   text-decoration: none;
+  padding-left: 20px;
   color: black;
   color: rgba(0, 0, 0, 0.54);
 }
 
+.textLink1 {
+  text-decoration: none;
+  color: black;
+  color: rgba(0, 0, 0, 0.54);
+}
 </style>

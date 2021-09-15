@@ -37,13 +37,13 @@
 }
 
 @media only screen and (max-width:650px) {
-   .__footer {
-        display: block;
-        height:50px;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-    }
+  .__footer {
+      display: block;
+      height:50px;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+  }
 }
 
 </style>

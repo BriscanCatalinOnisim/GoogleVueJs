@@ -1,6 +1,6 @@
 <template>
   <div class="footerRo">
-    <a href="#" class="textLink">Romania </a>
+    <a href="#" class="textLink1">Romania </a>
   </div>
 </template>
 
